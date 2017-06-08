@@ -24,10 +24,10 @@ class AddVehicle02(unittest.TestCase):
         driver.get(self.base_url + "/user/login")
         driver.maximize_window()
         time.sleep(0.3)
-        driver.find_element_by_id("userName").send_keys("admin")
-        driver.find_element_by_id("userPwd").send_keys("admin888")
+        driver.find_element_by_id("userName").send_keys("")
+        driver.find_element_by_id("userPwd").send_keys("")
         time.sleep(0.3)
-        driver.find_element_by_id("captcha").send_keys("0000")
+        driver.find_element_by_id("captcha").send_keys("")
         driver.find_element_by_id("submit").click()
         time.sleep(0.3)
 
